@@ -26,7 +26,7 @@ return packer.startup(function(use)
   use('wbthomason/packer.nvim')
 
   use('bluz71/vim-nightfly-guicolors') -- Preferred Colourscheme
-  
+
   -- tmux & split window navigation
   use('christoomey/vim-tmux-navigator')
 
@@ -55,7 +55,7 @@ return packer.startup(function(use)
   use({"nvim-telescope/telescope-fzf-native.nvim", run = "make" })
   use({"nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
   use({'nvim-lua/plenary.nvim'})
-  
+
   -- autocompletion
   use('hrsh7th/nvim-cmp')
   use('hrsh7th/cmp-buffer')
