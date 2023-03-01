@@ -71,12 +71,16 @@ return packer.startup(function(use)
   use('williamboman/mason.nvim')
   use('williamboman/mason-lspconfig.nvim')
 
-  -- configuring lsp servers
+  -- configuring lsp servers, linters and formatters
   use('neovim/nvim-lspconfig')
   use('hrsh7th/cmp-nvim-lsp')
   use({'glepnir/lspsaga.nvim', branch = 'main'})
   use('jose-elias-alvarez/typescript.nvim')
   use('onsails/lspkind.nvim')
+
+  -- formatting & linting
+  use("jose-elias-alvarez/null-ls.nvim")
+  use("jayp0521/mason-null-ls.nvim")
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
